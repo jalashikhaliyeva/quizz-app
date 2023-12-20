@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quizz App</title>
+    <link rel="stylesheet" href="./assets/style/reset.css" />
+    <link rel="stylesheet" href="./assets/style/style.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    /> -->
+  </head>
+  <body>
+    <div class="start-screen">
+      <button id="start-button">Start</button>
+    </div>
+    <div id="display-container">
+      <div class="header">
+        <div class="number-of-count">
+          <span class="number-of-question"> 1 of 10 question</span>
+        </div>
+        <div class="timer-div">
+          <img
+            src="https://www.svgrepo.com/download/61498/timer.svg"
+            alt="timer clock"
+            width="20px"
+          />
+          <span class="time-left">10s</span>
+        </div>
+      </div>
+      <div class="container">
+        <!-- for questions and answers  -->
+      </div>
+      <button id="next-button">Next</button>
+    </div>
+    <div id="result-container" class="hide">
+      <!-- The result table will be appended here -->
+    </div>
+    <div class="score-container hide">
+      <div id="user-score">Demo Score</div>
+      <button id="restart">Restart</button>
+    </div>
+
+    <script src="./assets/script.js"></script>
+  </body>
+
+  <script>
+
+    
+//!table with selected answers and corr answers___________________________________________________________-
+
+// nextBtn.addEventListener(
+//   "click",
+//   (displayNext = () => {
+//     questionCount += 1;
+//     if (questionCount == quizArray.length) {
+//       displayContainer.classList.add("hide");
+//       scoreContainer.classList.remove("hide");
+//       userScore.innerHTML = "Your score is " + scoreCount + " out of " + questionCount;
+//       // createResultTable();
+//       const resultTable = createResultTable();
+//       displayContainer.appendChild(resultTable);
+  
+//     } else {
+//       countOfQuestion.innerHTML =
+//         questionCount + 1 + " of " + quizArray.length + " Question ";
+//       quizDisplay(questionCount);
+//       count = 11;
+//       clearInterval(countdown);
+//       timerDisplay();
+//     }
+//   })
+// );
+
+
+
+
+// function createResultTable() {
+//   const table = document.createElement("table");
+//   table.classList.add("table"); // Add a class to the table
+//   const thead = document.createElement("thead");
+//   const tbody = document.createElement("tbody");
+//   thead.innerHTML = `
+//     <tr>
+//       <th scope="col"></th>
+//       <th scope="col">Question</th>
+//       <th scope="col">Your Answer</th>
+//       <th scope="col">Correct Answer</th>
+//     </tr>
+//   `;
+
+//   // Add the table rows with question and answers
+//   quizArray.forEach((question, index) => {
+//     const row = document.createElement("tr");
+//     row.innerHTML = `
+//       <th scope="row">${index + 1}</th>
+//       <td>${question.question}</td>
+//       <td>${getSelectedAnswer(index)}</td>
+//       <td>${question.correctAnswer}</td>
+//     `;
+//     tbody.appendChild(row);
+//   });
+
+//   table.appendChild(thead);
+//   table.appendChild(tbody);
+
+//   return table;
+// }
+//!____________________________________________________________________________
+  </script>
+</html>
